@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: pihole-web-service
-  namespace : pihole-test
+  namespace : pihole
 spec:
   selector:
     app: pihole
@@ -17,7 +17,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: pihole-dns-service
-  namespace: pihole-test
+  namespace: pihole
 spec:
   externalTrafficPolicy: Local
   selector:
